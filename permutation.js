@@ -146,6 +146,11 @@ const permutations = str => {
     Output: ["good", "god", "dog", "goo", "do", "go"]
 */
 const comparePermutationsToTargets = (str) => {
+    if (!str || !str.length) {
+      throw new Error('There is no input string to run permutations on.');
+    } else if (!WORDS.length || !Array.isArray(WORDS)) {
+      throw new Error('There are no words within the WORDS array, or WORDS is not an array.');
+    }
     const allPermutations = permutations(str);
 
     return allPermutations.filter( permutation => checkWord(permutation));
