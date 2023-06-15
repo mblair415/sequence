@@ -1,6 +1,6 @@
 /*
     ** To Use ** 
-Set array for WORDS variable on line 49
+Set array for WORDS variable on line 52
 Call the comparePermutationsToTargets() function with an argument that is the string of letters you want to check for permutations.
 
 
@@ -76,7 +76,7 @@ const buildLetterCount = str => {
 };
 
 /*
-Takes in a permutation that may be a match for a target word from WORDS array (line 49).  If it does match it returns true, else it returns false.
+Takes in a permutation that may be a match for a target word from WORDS array (line 52).  If it does match it returns true, else it returns false.
 
 Input: string
 Output: boolean
