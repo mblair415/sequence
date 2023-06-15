@@ -35,6 +35,9 @@ This would be especially important as the length of the string and the number of
         get to the x character.  That concept extends and is very impactful.
     * If for some reason we couldn't use the trie data structure we could mimic that functionality by building a hashset of every 1,2,3,4 character prefix of every word 
     within the original array of words.  This would give us constant lookup to know if we were building a permutation that was never going to go anywhere.
+    * Usage of dynamic programing via memoization would be immensely helpful.  A tremendous amount of time would be spent building permutations.  Some of these would be 
+    duplicated effort, especially as the input string grows longer.  Using a cache to track which prefixes actually do build out to a word would reduce computations by
+    reducing effort spent building out permutations that do not build toward a target word.
     * As the length of the input string increases it would become worthwhile to make a linear pass through the initial array of words to get the maximum length of any word 
     included.
         ** With 20 characters there are roughly 2,432,902,008,176,640,000 permutations. If the longest word is 10 characters we only need to use 10,240,000,000,000 
